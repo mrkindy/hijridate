@@ -4,30 +4,19 @@ namespace Kindy\HijriDate;
 
 
 /**
+ * 
+ * This file is part of the Kindy\HijriDate Package.
+ *
+ * (c) Ibrahim Abotaleb <admin@mrkindy.com> and Saeed Hubaishan
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ * 
  * Hijri Calendar Class is group of functions that gets the Hijri Calendar and converts it to other calendars
  *
  * This class contains functions work similar to calendar functions in PHP but
  * it is work with Hijri Calendar.
- * The Class has two algorithms to calculate the Hijri Date
- * <dt>Hijri Tabular Algorithm:</dt><dd>This algorithm was used by past to simplify
- * the Hijri Calendar calculation, The result of this algorithm identical to Hijri
- * Calendar in Microsoft programs and "The Calendar of Centuries-تقويم القرون"
- * book of "Saleh Alojiry صالح العجيري".</dd>
- * <dt>Umm Al-Qura Algorithm(Recommended).</dt><dd>This is the official calendar of Saudi Arabia
- * Kingdom based on astronomical calculation which published in the site http://www.ummulqura.org.sa,
- * the range of this algorithm from year 1318 to 1500, the start of hijri months
- * of this algorithm can be adjusted by using CalendarAdjustment Class see file adjuster.php in folder example as sample</dd>
- * to set the default setting of this class use $hijri_settings variable which
- * is an array with this sample structure:
- * <pre><code>$hijri_settings=array(
- * 'langcode'=>'ar',
- * 'defaultformat'=>'_j _M _Yهـ',
- * 'umalqura'=> TRUE,
- * 'adj_data'=> array(1426 => 57250, 1429 => 57339,),
- * 'grdate_format' => 'j M Y',
- * );</code></pre>
-
- * $hijri_sittings['adj_data'] must be an array or string contains a serialiezed array
+ * 
  */
 class Calendar
 {

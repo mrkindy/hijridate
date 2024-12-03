@@ -4,18 +4,12 @@ namespace Kindy\HijriDate;
 
 
 /**
+ * 
+ * This file is part of the Kindy\HijriDate Package.
+ *
+ * (c) Ibrahim Abotaleb <admin@mrkindy.com> and Saeed Hubaishan
+ *
  * Hijri CalendarAdjustment Class is group of functions that help to get and correct adjustments to Umm Al-Qura Calendar
- *
- *
- * to set the default setting of this class use $hijri_settings variable which
- * is an array with this sample structure:
- * <pre><code>$hijri_settings=array(
- * 'langcode'=>'ar',
- * 'defaultformat'=>'_j _M _Yهـ',
- * 'umalqura'=> TRUE,
- * 'adj_data'=> array(1426 => 57250, 1429 => 57339,),
- * 'grdate_format' => 'j M Y',
- * );</code></pre>
  *
  */
 class CalendarAdjustment extends Calendar

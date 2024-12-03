@@ -3,25 +3,22 @@
 namespace Kindy\HijriDate;
 
 /**
+ * 
+ * This file is part of the Kindy\HijriDate Package.
+ *
+ * (c) Ibrahim Abotaleb <admin@mrkindy.com> and Saeed Hubaishan
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ * 
  * Hijri Date custom extensions to the PHP DateTime class
  * This handles the Hijri Calendar beside the Gregorian Calendar
  *
  * This class override PHP DateTime Class to show the Hijri Calendar Date and also
- * showing the Gregorian Calendar Translated to Arabic Language if language set to
- * 'ar' the Hijri Calendar calculated depending of hijri\calendar Class which
- * have two algorithms:
- * <ul><li>Hijri Tabular Algorithm.
- * <li>Umm Al-Qura Algorithm.</ul>
- * to set the default setting of this class use $hijri_settings variable which
- * is an array with this sample structure:
- * <pre><code>$hijri_settings=array(
- * 'langcode'=>'ar',
- * 'defaultformat'=>'_j _M _Yهـ',
- * 'umalqura'=TRUE,
- * 'adj_data'=> array(1426 => 57250, 1429 => 57339,)
- * );</code></pre>
+ * showing the Gregorian Calendar Translated to Arabic Language
  *
  */
+
 class HijriDateTime extends \DateTime
 {
 	
