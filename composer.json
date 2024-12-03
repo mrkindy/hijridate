@@ -1,0 +1,28 @@
+{
+    "name": "kindy/hijridate",
+    "description": "Package for Hijri date conversion and manipulation in PHP",
+    "keywords": [
+        "Hijri",
+        "Hijri Date",
+        "PHP Hijri Date",
+        "Laravel Hijri Date",
+        "Date Conversion",
+        "Date Conversion To Hijri"
+    ],
+    "homepage": "https://github.com/mrkindy/hijridate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":Ibrahim Abotaleb",
+            "email": "admin@mrkindy.com",
+            "homepage": "https://mrkindy.com",
+            "role": "Software Engineer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kindy\\HijriDate\\": "src/"
+        }
+    },
+    "require": {}
+}
