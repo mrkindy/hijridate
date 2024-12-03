@@ -6,8 +6,9 @@ use Kindy\HijriDate\Hijirdatetime;
 use Kindy\HijriDate\Calendar;
 
 //echo new Hijirdatetime();
-
 //echo (new Hijirdatetime())->format('D _j _M _Yهـ (j-m-Yم)');
+
+//echo Hijirdatetime::Date('_Y-_m-_d','2024-12-3');
 
 //echo (new Hijirdatetime("2024-12-3"))->format('D _j _M _Yهـ (j-m-Yم)');
 

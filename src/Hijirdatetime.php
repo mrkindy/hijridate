@@ -89,6 +89,25 @@ class Hijirdatetime extends \DateTime
 		parent::__construct($time, $timezone);
 	}
 
+    /**
+     * @param string format     date format (see http://php.net/manual/en/function.date.php)
+     *         Integer timestamp   time measured in the number of seconds since
+     *                        the Unix Epoch (January 1 1970 00:00:00 GMT)
+     *         Integer hijri   boolean defines whether you want to get Hijri or Gregorian date
+     * @param int $timestamp
+     *
+     * @return string Returns the Hijri date according to format and timestamp in Arabic
+     *                string date string [format , int timestamp]
+     * @desc   date returns a string formatted according to the given format string using the given
+     *                  integer timestamp or the current time if no timestamp is given. In other words, timestamp
+     *                  is optional and defaults to the value of time(), also hijri can be set to 0 to get Greg date.
+     */
+	public static function Date($format, $date = "now", \DateTimeZone $timezone = null, $langcode = null, $hijriCalendar = null)
+	{
+		$date = new static($date, $timezone, $langcode, $hijriCalendar);
+		return $date->format($format);
+
+	}
 	/**
 	 * Create DateTime object from hijri date
 	 *
