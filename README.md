@@ -190,7 +190,7 @@ Your contribution is welcome
 
 ## License
 
-This package is licensed under [MIT License](LICENSE).
+This package is licensed under [GPL-2 License](LICENSE).
 
 ---
 
