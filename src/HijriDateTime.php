@@ -22,7 +22,7 @@ namespace Kindy\HijriDate;
  * );</code></pre>
  *
  */
-class Hijirdatetime extends \DateTime
+class HijriDateTime extends \DateTime
 {
 	
 	/**
